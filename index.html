@@ -29,52 +29,51 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   
     <!-- jQuery -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="owlcarousel/owl.carousel.min.js"></script>
     
     <!-- Owl Carouselを動作させるために追加 -->
     <script src="test-carousel.js"></script>
-
-</head>
-<style>
-    .owl-theme .owl-dots, .owl-theme .owl-nav {
-    text-align: left;
-    -webkit-tap-highlight-color: transparent;
-        
-    }
-    .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 0px;
-    }
-    .owl-theme .owl-dots .owl-dot span {
-    width: 30px;
-    height: 3px;
-    margin: 3px 3px;
-    background: #D6D6D6;
-    display: block;
-    -webkit-backface-visibility: visible;
-    border-radius:0px;
-    }
-    .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{
-        background:#9d1a2d
-    }
-    .owl-dot{
-        height:0px;
-    }
-</style>
-<script>
-  $(function(){
-
-    $(document).ready(function(){
-
-      $("#sp_navi_btn").click(function () {
-        $(this).next().slideToggle();
+    <style>
+        .owl-theme .owl-dots, .owl-theme .owl-nav {
+        text-align: left;
+        -webkit-tap-highlight-color: transparent;
+            
+        }
+        .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+        }
+        .owl-theme .owl-dots .owl-dot span {
+        width: 30px;
+        height: 3px;
+        margin: 3px 3px;
+        background: #D6D6D6;
+        display: block;
+        -webkit-backface-visibility: visible;
+        border-radius:0px;
+        }
+        .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{
+            background:#9d1a2d
+        }
+        .owl-dot{
+            height:0px;
+        }
+    </style>
+    <script>
+      $(function(){
+    
+        $(document).ready(function(){
+    
+          $("#sp_navi_btn").click(function () {
+            $(this).next().slideToggle();
+          });
+    
+        });
+    
       });
-
-    });
-
-  });
-</script>
+    </script>
+</head>
 <body>
     <header>
         <div class="pc_navi">
@@ -94,8 +93,8 @@
                             <li class="navi_shopping_guide"><a href="#shopping_gude">SHOPPING GUIDE</a></li>
                         </ul>
                         <span class="icon">
-                            <img id="sp_facebook_btn" class="u-max-full-width" src="images/top/facebook.png" alt="sp_navi" />
-                            <img id="sp_insta_btn" class="u-max-full-width" src="images/top/insta.png" alt="sp_navi"/>
+                            <img class="sp_facebook_btn u-max-full-width" src="images/top/facebook.png" alt="facebook" />
+                            <img class="sp_insta_btn u-max-full-width" src="images/top/insta.png" alt="insta"/>
                         </span>
                     </div>
                 <!-- pc_navi -->
@@ -107,9 +106,9 @@
         <div class="sp_navi">
             <div id="sp_header_in">
                 <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png 2x" /></a></h1>
-                <img id="sp_facebook_btn" class="u-max-full-width" src="images/top_sp/fb.png" alt="sp_navi" srcset="images/top_sp/fb@2x.png 2x" />
-                <img id="sp_insta_btn" class="u-max-full-width" src="images/top_sp/insta.png" alt="sp_navi" srcset="images/top_sp/insta@2x.png 2x" />
-                <img id="sp_navi_btn" class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png 2x" />
+                <img class="sp_facebook_btn u-max-full-width" src="images/top_sp/fb.png" alt="fb" srcset="images/top_sp/fb@2x.png 2x" />
+                <img class="sp_insta_btn u-max-full-width" src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png 2x" />
+                <img class="sp_navi_btn u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu_icon" srcset="images/top_sp/menu_icon@2x.png 2x" />
                 
                 <ul class="sp_navi_li">
                     <li><a href="#">LOGIN</a></li>
@@ -127,25 +126,25 @@
             <div class="nine columns">
                 <div id="top">
                     <div class="owl-carousel owl-theme">
-                        <div><img src="images/top/ca_banner.jpg"></div>
-                        <div> Your Content1 </div>
-                        <div><img src="images/top/ca_banner.jpg"></div>
-                        <div> Your Content2 </div>
+                        <div><img src="images/top/ca_banner.jpg" alt="ca_banner"></div>
+                        <div><img src="images/top/ca_banner.jpg" alt="ca_banner"></div>
+                        <div><img src="images/top/ca_banner.jpg" alt="ca_banner"></div>
+                        <div><img src="images/top/ca_banner.jpg" alt="ca_banner"></div>
                     </div>
                 </div>
                 <div id="new_items">
                     <div class="area_title">
-                        <img src="images/top/title_newitems.png">
+                        <img src="images/top/title_newitems.png" alt="title_newitems">
                     </div>
                     <div class="sp_area_title">
-                        <img class="u-max-full-width" src="images/top_sp/title_new_item.png" alt="sp_title" srcset="images/top_sp/title_new_item@2x.png 2x" />
+                        <img class="u-max-full-width" src="images/top_sp/title_new_item.png" alt="title_new_item" srcset="images/top_sp/title_new_item@2x.png 2x" />
                     </div>
                     <div class="contents_area">
                         <div class="item_area">
                             <ul>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_01.jpg">
+                                        <img src="images/top/item_01.jpg" alt="item_01">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -156,7 +155,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_02.jpg">
+                                        <img src="images/top/item_02.jpg" alt="item_02">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -167,7 +166,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_03.jpg">
+                                        <img src="images/top/item_03.jpg" alt="item_03">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -178,7 +177,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_04.jpg">
+                                        <img src="images/top/item_04.jpg" alt="item_04">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -189,7 +188,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_05.jpg">
+                                        <img src="images/top/item_05.jpg" alt="item_05">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -200,7 +199,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_06.jpg">
+                                        <img src="images/top/item_06.jpg" alt="item_06">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -215,17 +214,17 @@
                 </div>
                 <div id="popular_items">
                     <div class="area_title">
-                        <img src="images/top/title_popular.png">
+                        <img src="images/top/title_popular.png" alt="title_popular">
                     </div>
                     <div class="sp_area_title">
-                        <img class="u-max-full-width" src="images/top_sp/title_popular.png" alt="sp_title" srcset="images/top_sp/title_popular@2x.png 2x" />
+                        <img class="u-max-full-width" src="images/top_sp/title_popular.png" alt="title_popular" srcset="images/top_sp/title_popular@2x.png 2x" />
                     </div>
                     <div class="contents_area">
                         <div class="item_area">
                             <ul>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_07.jpg">
+                                        <img src="images/top/item_07.jpg" alt="item_07">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -236,7 +235,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_08.jpg">
+                                        <img src="images/top/item_08.jpg" alt="item_08">
                                     </span>
                                     <p class="item_title">
                                         <a href="products.html">商品名が入ります商品名が入ります商品名が入ります</a>
@@ -247,7 +246,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_09.jpg">
+                                        <img src="images/top/item_09.jpg" alt="item_09">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -258,7 +257,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_10.jpg">
+                                        <img src="images/top/item_10.jpg" alt="item_10">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -269,7 +268,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_11.jpg">
+                                        <img src="images/top/item_11.jpg" alt="item_11">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -280,7 +279,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="images/top/item_12.jpg">
+                                        <img src="images/top/item_12.jpg" alt="item_12">
                                     </span>
                                     <p class="item_title">
                                         商品名が入ります商品名が入ります商品名が入ります
@@ -295,15 +294,15 @@
                 </div>
                 <div id="shopping_gude">
                     <div class="area_title">
-                        <img src="images/top/title_guide.png">
+                        <img src="images/top/title_guide.png" alt="title_guide">
                     </div>
                     <div class="sp_area_title">
-                        <img class="u-max-full-width" src="images/top_sp/title_guide.png" alt="sp_title" srcset="images/top_sp/title_guide@2x.png 2x" />
+                        <img class="u-max-full-width" src="images/top_sp/title_guide.png" alt="title_guide" srcset="images/top_sp/title_guide@2x.png 2x" />
                     </div>
                     <div class="contents_area">
                         <div class="contact_area">
                             <h2>お届けについて</h2>
-                            <img src="images/top/otodoke_banner.png">
+                            <img src="images/top/otodoke_banner.png" alt="otodoke_banner">
                             <h3>■○○運輸</h3>
                             <p>送料 000円</p>
                             <h3>■ゆうパケット</h3>
@@ -312,7 +311,7 @@
                         <div class="contact_area">
                             <h2>決済について</h2>
                             <h3>■カード決済</h3>
-                            <img src="images/top/cards.png">
+                            <img src="images/top/cards.png" alt="cards">
                             <h3>■代金引換</h3>
                             <p>代引き手数料が別途かかります</p>
                             <h3>■銀行振込</h3>
@@ -325,65 +324,65 @@
             <div class="three columns">
                 <div id="pc_sidemenu">
                     <div id="item_search">
-                        <img src="images/top/itemserch.png">
+                        <img src="images/top/itemserch.png" alt="itemserch">
                         <div id="search_box">
                             <input type="search" id="search" placeholder="Search"/>
-                            <input id="search_button" type="image" value="" src="images/top/search_icon.png">
+                            <input id="search_button" type="image" src="images/top/search_icon.png" alt="search_icon">
                         </div>
                     </div>
                     <div id="page_link">
-                        <div class="float_left"><img class="next_icon" src="images/top/pagelink.png"></div>
-                        <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                        <div class="float_left"><img class="next_icon" src="images/top/pagelink.png" alt="pagelink"></div>
+                        <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                     </div>
                     <div id="category">
                         <div class="parent_category">
-                            <div class="float_left"><img class="next_icon" src="images/top/categories.png"></div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/down_icon.png"></div>
+                            <div class="float_left"><img class="next_icon" src="images/top/categories.png" alt="categories"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/down_icon.png" alt="down_icon"></div>
                         </div>
                         <div class="child_category">
                             <a href="list.html">
                             <div class="float_left">カテゴリー名</div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                             </a>
                         </div>
                         <div class="child_category">
                             <a href="list.html">
                             <div class="float_left">カテゴリー名</div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                             </a>
                         </div>
                         <div class="child_category">
                             <a href="list.html">
                             <div class="float_left">カテゴリー名</div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                             </a>
                         </div>
                         <div class="child_category">
                             <a href="list.html">
                             <div class="float_left">カテゴリー名</div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                             </a>
                         </div>
                         <div class="child_category">
                             <a href="list.html">
                             <div class="float_left">カテゴリー名</div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                             </a>
                         </div>
                         <div class="child_category">
                             <a href="list.html">
                             <div class="float_left">カテゴリー名</div>
-                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png"></div>
+                            <div class="text_align_right"><img class="next_icon" src="images/top/next_icon.png" alt="next_icon"></div>
                             </a>
                         </div>
                     </div>
                     <div id="about">
                         <div class="parent_about">
-                            <img class="next_icon" src="images/top/about.png">
+                            <img class="next_icon" src="images/top/about.png" alt="about">
                         </div>
                         <div class="child_about">
                             <span class="sp_image">
-                                <img src="images/top/about_img.jpg" width="100%">
+                                <img src="images/top/about_img.jpg" alt="about_img">
                             </span>
                             <p class="item_title">
                                 お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明
@@ -392,17 +391,17 @@
                                 お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明
                             </span>
                             <div class="more_bottun">
-                                <img src="images/top/more_btn.png">
+                                <img src="images/top/more_btn.png" alt="more_btn">
                             </div>
                         </div>
                     </div>
                     <div id="shop_info">
                         <div class="parent_shop_info">
-                            <img class="next_icon" src="images/top/shop_info.png">
+                            <img class="next_icon" src="images/top/shop_info.png" alt="shop_info">
                         </div>
                         <div class="child_shop_info">
                             <span class="sp_image">
-                                <img src="images/top/shopinfo_img.jpg" width="100%">
+                                <img src="images/top/shopinfo_img.jpg" alt="shopinfo_img">
                             </span>
                             <p class="item_title">
                                 お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明
@@ -411,7 +410,7 @@
                                 お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明
                             </span>
                             <div class="more_bottun">
-                                <img src="images/top/more_btn.png">
+                                <img src="images/top/more_btn.png" alt="more_btn">
                             </div>
                         </div>
                     </div>
@@ -422,10 +421,10 @@
     <footer>
         <div class="container">
             <div class="page_top">
-                <a href="header_in"><img src="images/top/pagetop.png"></a>
+                <a href="#header_in"><img src="images/top/pagetop.png" alt="pagetop"></a>
             </div>
             <div class="sp_page_top">
-                <a href="#sp_header_in" id="sp_page_top_img"><img src="images/top/pagetop.png"></a>
+                <a href="#sp_header_in" id="sp_page_top_img"><img src="images/top/pagetop.png" alt="pagetop"></a>
             </div>
             <div class="footer_menu">
                 <ul>

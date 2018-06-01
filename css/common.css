@@ -10,6 +10,9 @@ body {
   font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   line-height: 1.6;
   margin: 0; }
+  @media (max-width: 550px) {
+    body {
+      margin: 0 10px; } }
 
 a {
   color: #222;
@@ -43,9 +46,9 @@ header {
       padding: 10px 0 10px 0; }
     header h1 {
       margin: 0; }
-    header #sp_facebook_btn {
+    header .sp_facebook_btn {
       margin-right: 10px; }
-    header #sp_insta_btn {
+    header .sp_insta_btn {
       margin-right: 10px; } }
   header .sp_navi_li {
     width: 180px;
@@ -137,7 +140,7 @@ header {
         background-color: #fff;
         display: block;
         float: left;
-        width: 41%;
+        width: 40%;
         padding: 15px; }
       #main .contents_area .item_area ul:after {
         content: '';
@@ -215,6 +218,11 @@ header {
       #main #detail_arae .contents_area .img_area .main_img {
         margin-right: 5px;
         float: left; }
+        #main #detail_arae .contents_area .img_area .main_img img {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          max-height: 100%; }
         @media (max-width: 550px) {
           #main #detail_arae .contents_area .img_area .main_img img {
             width: 375px; } }
@@ -225,7 +233,7 @@ header {
             width: 76px; } }
         @media (max-width: 550px) {
           #main #detail_arae .contents_area .img_area .sub_img img {
-            width: 68px; } }
+            width: 64px; } }
     @media (min-width: 550px) {
       #main #detail_arae .contents_area .color_size {
         margin-top: 30px;
@@ -290,6 +298,10 @@ header {
         font-weight: bold;
         margin: 0;
         padding: 20px 0; }
+      #main #detail_arae .detail_explan table {
+        table-layout: fixed; }
+      #main #detail_arae .detail_explan .colspan {
+        width: calc(100% / 3); }
       @media (max-width: 550px) {
         #main #detail_arae .detail_explan .colspan2 {
           text-align: left; } }
@@ -458,6 +470,11 @@ header {
       float: left;
       width: 50%;
       margin-right: 10px; }
+      #pc_sidemenu .sp_image img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%; }
     #pc_sidemenu:after {
       content: '';
       display: block;
