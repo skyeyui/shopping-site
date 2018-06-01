@@ -692,6 +692,14 @@ header{
     .sp_item_title{
       display:none;
     }
+    .sp_image{
+      img{
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+      }
+    }
   }
 }
 
