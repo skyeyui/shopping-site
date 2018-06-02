@@ -73,6 +73,8 @@ header {
         text-decoration: none;
         color: #887f69; }
   @media (min-width: 550px) {
+    header .navi {
+      text-align: right; }
     header .sp_navi {
       display: none; }
     header #header_in {

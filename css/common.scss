@@ -113,7 +113,9 @@ header{
   }
 
   @media (min-width: 550px) {
-
+    .navi{
+      text-align:right;
+    }
     .sp_navi{
       display: none;
     }
